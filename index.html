@@ -183,7 +183,7 @@
   <p>Na HTML, as imagens são definidas com a tag &#60;img&#62;. É uma tag é vazia, com atributos e sem tag de fechamento.</p>
   <p>Para exibir uma imagen em uma página, necessário usar o atributo src. Src significa "source" [fonte].
     O atributo alt serve para adicionar uma descrição à imagem, valor do atributo src é a URL da imagem a ser exibida na página de acordo com a sintaxe: &#60;img src="url" alt="Uma descrição da imagem">&#62;</p>
-    Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do alt atributo. O altatributo é obrigatório. Uma página da web não será validada corretamente sem ela.
+    Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do <i>alt</i> atributo. O altatributo é obrigatório. Uma página da web não será validada corretamente sem ela.
   <p>Exemplo:</p>
   <table border="1">
     <tr>
@@ -193,6 +193,12 @@
     <tr>
       <td><p>&#60;img src="img_girl.jpg" alt="Girl in a jacket"&#62;</p></td>
       <td><p><img src="image/imagemsaida.jpg"></p></td>
+    </tr>
+  </table>
+  <p>Para dimensionar a imagem aconselha-se usar <i>style</i> dentro do <i>head</i> (para a imagem não sofrer alteração) e especificar a largura e a altura conforme abaixo:</p>
+  <table border="1">
+    <tr>
+      <td><p><img src="image/imagemtamanho.jpg"></p></td>
     </tr>
   </table>
   <hr>
