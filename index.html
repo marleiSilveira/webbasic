@@ -93,6 +93,7 @@
   <h3>Estrutura de um documento HTML</h3>
   <p>A estrutura básica de um documento HTML é composta por três tags (html, head e body), deve estar presente em todos os documentos, e seguir exatamente a seguinte sequência:</p>
   <p><img src="image/htmlestrutura.jpg"></p>
+  <p>De acordo com o padrão HTML5 o &#60;html&#62;, o &#60;body&#62;e a &#60;head&#62; tag podem ser omitidos.</p>
   <p>Descrição das tags:
     <p><ul>
       <li><b>&#60;html&#62;</b> e <b>&#60;/html&#62;</b>: Tag utilizada pelo navegador para identificar que o documento em questão trata-se de um HTML e não de texto puro. Entre <html> e </html> devem estar todas as outras tags, as informações e todo o conteúdo.</li>
@@ -103,6 +104,53 @@
   </p>
   <hr>
   <h3>Marcadores de estilo</h3>
+  <p>A configuração do estilo de um elemento HTML pode ser feita com o <i>style</i> atributo.
+    O <i>style</i> atributo HTML possui a seguinte sintaxe :</p>
+    <table border="1">
+      <tr>
+        <td><p><img src="image/estiloatributo.jpg"></p></td>
+      </tr>
+    </table>
+  <p>A <i>property</i> é uma propriedade CSS. O <i>value</i> é um valor CSS.</p>
+  <p>Quando um navegador lê uma marcador/folha de estilo, ele formata o documento de acordo com ela.
+    Há três maneiras de inserir uma folha de estilo:</p>
+  <p><b>Folha de Estilo Externa</b></p>
+  <p>Uma folha de estilo externa é ideal quando o estilo é aplicado em muitas páginas.
+    Com uma folha de estilo externa, você pode mudar a aparência de um sítio Web inteiro pela mudança de um arquivo.
+    Cada página deve vincular-se à folha de estilo usando a tag &#60;link&#62;.
+    A tag &#60;link&#62; vai dentro da seção head.</p>
+    <table border="1">
+      <tr>
+        <td><p><img src="image/estiloexterno.jpg"></p></td>
+      </tr>
+    </table>
+  <p><b>Folha de Estilo Interna</b></p>
+  <p>Uma folha de estilo interna deve ser usada quando um documento específico tem um estilo único.
+    Você define estilos internos na seção head com a tag &#60;style&#62;.</p>
+    <table border="1">
+      <tr>
+        <td><p><img src="image/estilointerno.jpg"></p></td>
+      </tr>
+    </table>
+  <p><b>Estilos Local (inline)</b></p>
+  <p>Um estilo local (inline) deve ser usado quando um estilo único deve ser aplicado a uma única ocorrência de um elemento.
+    Para usar estilos locais (inline) você usa o atributo de estilo na tag relevante.
+    O atributo de estilo pode conter qualquer propriedade CSS.
+    O exemplo mostra como mudar a cor e a margem esquerda de um parágrafo:</p>
+    <table border="1">
+      <tr>
+        <td><p><img src="image/estiloinline.jpg"></p></td>
+      </tr>
+    </table>
+    <h4>Tipos de estilo de elementos HTML</h4>
+    <p><ul>
+      <li><i>style</i>: atributo para estilizar.</li>
+      <li><i>background-color</i>: propriedade CSS que define a cor de plano de fundo.</li>
+      <li><i>color</i>: propriedade CSS define a cor do texto.</li>
+      <li><i>font-family</i>: propriedade CSS define a fonte a ser usada.</li>
+      <li><i>font-size</i>: propriedade CSS define o tamanho do texto.</li>
+      <li><i>text-align</i>: propriedade CSS define o alinhamento horizontal do texto.</li>
+    </p></ul>
   <hr>
   <h3>Cabeçalhos</h3>
   <hr>
