@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Introdução ao html</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Introdução ao html</h1>
+  <h3>O que é HTML?</h3>
+  <h3>Tags</h3>
+  <h3>Estrutura de um documento HTML</h3>
+  <h3>Marcadores de estilo</h3>
+  <h3>Cabeçalhos (Head)</h3>  
+  <h3>Cores de texto e padrões de fundo</h3>
+  <h3>Imagens</h3>
+  <hr>
+  <h3>Links</h3>
+  <p>Os links permitem que os usuários cliquem no caminho de uma página para outra. Podem ser texto , imagens ou um elemento html.
+  </p>
+
+  <h4>Hiperlinks</h4>
+  <p>Links HTML são hiperlinks.
+    Você pode clicar em um link e pular para outro documento.
+    Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.
+  </p>
+  <h4>Sintaxe</h4>
+
+  <p>Os hiperlinks são definidos com a &#60;a&#62; tag HTML.</p>
+  <!-- <a href="url">link text</a> -->
+  <p>Exemplo:
+    &#60;a href="https://www.w3schools.com/html/"&#62;Visit our HTML tutorial&#60;/a&#62;
+    O href atributo especifica o endereço de destino ( https://www.w3schools.com/html/ ) do link.
+
+  </p>
+  <p>O texto do link é a parte visível (visite nosso tutorial em HTML).
+    Ao clicar no texto do link, você será enviado para o endereço especificado.
+  </p>
+
+  <h4>Links Locais</h4>
+  <p>O exemplo anterior usou um URL absoluto (um endereço da Web completo).
+    Um link local (link para o mesmo site) é especificado com um URL relativo (sem https: // www ....).
+  </p>
+  <p>Exemplo:
+    <a href="html_images.asp">HTML Images</a>
+  </p>
+
+  <h4>O atributo de destino &#60;target&#62; </h4>
+  <p>
+    O <i>target</i> atributo especifica onde abrir o documento vinculado.
+    O <i>target</i> atributo pode ter um dos seguintes valores:
+  </p>
+  <p><ul>
+    <li><i>_blank</i> - Abre o documento vinculado em uma nova janela ou guia.</li>
+    <li><i>_self</i> - Abre o documento vinculado na mesma janela / guia em que foi clicado (isso é o padrão).</li>
+    <li><i>_parent</i> - Abre o documento vinculado no quadro pai.</li>
+    <li><i>_top</i> - Abre o documento vinculado no corpo inteiro da janela.</li>
+    <li><i>framename</i>  - Abre o documento vinculado em um quadro nomeado.</li>
+  </p>
+  <p>
+    Este exemplo abrirá o documento vinculado em uma nova janela / guia do navegador:
+  </p>
+  <p>
+    Exemplo:
+    &#60;a href="https://www.w3schools.com/" target="_blank"&#62;Visit W3Schools!&#60;/a&#62;
+  </p>
+  <h4>Imagem como um link</h4>
+  <p>
+    É comum usar imagens como links:
+  </p>
+  <p>Exemplo:</p>
+  <p>&#60;a href="default.asp"&#62;
+    &#60;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&#62;
+    &#60;/a&#62;
+  </p>
+  <h4>Botão como um link</h4>
+  <p>
+    Para usar um botão HTML como um link, você precisa adicionar um código JavaScript.
+    O JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:
+  </p>
+  <p>
+    Exemplo: &#60;button onclick="document.location = 'default.asp'"&#62;HTML Tutorial&#60;/button&#62;
+  </p>
+  <h4>Títulos de Link</h4>
+  <p>
+    O titleatributo especifica informações extras sobre um elemento. As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse se move sobre o elemento.
+  </p>
+  <p>
+    Exemplo:&#60;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&#62;Visit our HTML Tutorial&#60;/a&#62;
+  </p>
+  <h4>Tags de link HTML</h4>
+  <p>
+    Para obter uma lista completa de todas as tags HTML disponíveis, visite nossa Referência de tags HTML.
+    <a href="https://www.w3schools.com/tags/default.asp//" target="_blank">Visit W3Schools/tags</a>.
+  </p>
+  <h4>Cores do link HTML</h4>
+  <p>Por padrão, um link aparecerá assim (em todos os navegadores):</p>
+  <p>
+    <ul>
+      <li>Um link não visitado está sublinhado e azul</li>
+      <li>Um link visitado está sublinhado e roxo</li>
+      <li>Um link ativo está sublinhado e vermelho</li>
+      <li>Você pode alterar as cores padrão usando <a href="https://www.w3schools.com/html/html_links_colors.asp" target="_blank">Cor/CSS</a>.</li>
+      <ul/>
+    </p>
+    <h4>Links HTML - Crie um marcador</h4>
+    <p>
+      Marcadores HTML são usados ​​para permitir que os leitores pulem para partes específicas de uma página da Web.
+      Os marcadores podem ser úteis se uma página da web for muito longa.
+      Para criar um marcador - primeiro crie o marcador e adicione um link a ele.
+      Quando o link é clicado, a página rola para baixo ou para cima até o local com o marcador.
+    </p>
+    <p> Elementos:
+      <b>id</b> = " value " - para definir indicadores em uma página.
+      <b>href</b> = "# value "-  para vincular ao marcador.
+    </p>
+    <p>Exemplo:</p>
+    <p>
+      Primeiro, crie um marcador com o <i>id</i> tributo:
+      &#60;h2 id="C4"&#62;Chapter 4&#60;/h2&#62;
+    </p>
+    <p>
+      Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:
+    </p>
+    <p>Exemplo:</p>
+    <p>&#60;a href="#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
+    <p>
+      Um link pode ser adicionado a um marcador em outra página:
+    </p>
+    <p>&#60;a href="html_demo.html#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
+
+    <hr>
+    <h3>Tabelas (table, tr, td, expansão de celulas, alinhamento, legenda)</h3>
+    <h3>Formulários (FORM, INPUT, SELECT e OPTION)</h3>
+  </body>
+  </html>

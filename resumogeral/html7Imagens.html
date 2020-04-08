@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Introdução ao html</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Introdução ao html</h1>
+  <h3>O que é HTML?</h3>
+  <h3>Tags</h3>
+  <h3>Estrutura de um documento HTML</h3>
+  <h3>Marcadores de estilo</h3>
+  <h3>Cabeçalhos (Head)</h3>  
+  <h3>Cores de texto e padrões de fundo</h3>
+  <hr>
+  <h3>Imagens</h3>
+  <p>
+    Na HTML, as imagens são definidas com a tag &#60;img&#62;. É uma tag é vazia, com atributos e sem tag de fechamento.
+  </p>
+  <p>
+    Para exibir uma imagen em uma página, necessário usar o atributo src. Src significa "source" [fonte].
+    O atributo alt serve para adicionar uma descrição à imagem, valor do atributo src é a URL da imagem a ser exibida na página de acordo com a sintaxe: &#60;img src="url" alt="Uma descrição da imagem">&#62;
+    Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do <i>alt</i> atributo. O  <i>alt</i> atributo é obrigatório. Uma página da web não será validada corretamente sem ela.
+  </p>
+  <p>Exemplo:</p>
+  <p>
+    <table border="1">
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td><p>&#60;img src="img_girl.jpg" alt="Girl in a jacket"&#62;</p></td>
+        <td><p><img src="image/imagemsaida.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+  <p>
+    Para dimensionar a imagem aconselha-se usar <i>style</i> dentro do <i>head</i> (para a imagem não sofrer alteração) e especificar a largura e a altura conforme abaixo:
+  </p>
+  <p>
+    <table border="1">
+      <tr>
+        <td><p><img src="image/imagemtamanho.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+  <h4>Imagens em outra pasta</h4>
+  <p>
+    Se não especificado, o navegador espera encontrar a imagem na mesma pasta que a página da web.
+  </p>
+  <p>
+  No entanto, é comum armazenar imagens em uma subpasta. Você deve incluir o nome da pasta no srcatributo:</p>
+  <p>Exemplo:</p>
+  <!-- <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> -->
+  <p>&#60;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&#62;</p>
+  <p><table border="1">
+    <tr>
+      <td><p><img src="image/imagemEmOutraPasta.jpg"></p></td>
+    </tr>
+  </table>
+</p>
+<h4>Imagens em outro servidor</h4>
+<p>As imagens podem ser acessadas de qualquer endereço da web:</p>
+&#60;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&#62;
+<table border="1">
+  <tr>
+    <td><p><img src="image/imagemEmOutroServidor.jpg"></p></td>
+  </tr>
+</table>
+
+<h4>Imagens animadas</h4>
+<p>O HTML permite GIFs animados:</p>
+<p>Exemplo:</p>
+<p>&#60;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&#62;</p>
+<p>
+  <table border="1">
+    <tr>
+      <td><p><img src="image/imagemAnimada.jpg"></p></td>
+    </tr>
+  </table>
+</p>
+<h4>Imagem como um link</h4>
+<p>Para usar uma imagem como um link, coloque a &#60;img&#62; tag dentro da &#60;a&#62; tag:</p>
+<p>Exemplo:</p> <!-- <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial"style="width:42px;height:42px;border:0;"></a>-->
+<p>
+  <b>Nota:</b> <i> border:0; </i> é adicionado para impedir o IE9 (e versões anteriores) de exibir uma borda ao redor da imagem (quando a imagem é um link).
+</p>
+
+<p>Nos exemplos citados observe o que há em comum:</p>
+<p>
+  <ul>
+    <li>Use o <img>elemento HTML para definir uma imagem</li>
+    <li>Use o src atributo HTML para definir o URL da imagem</li>
+    <li>Use o alt atributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida</li>
+    <li>Use o HTML widthe os height atributos para definir o tamanho da imagem</li>
+    <li>Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (como alternativa)</li>
+  </ul>
+</p>
+<p>
+  <b>
+    Carregar imagens leva tempo. Imagens grandes podem diminuir a velocidade da sua página. Use imagens com cuidado.
+  </b>
+</p>
+
+<hr>
+<h3>Links</h3>
+<h3>Tabelas (table, tr, td, expansão de celulas, alinhamento, legenda)</h3>
+<h3>Formulários (FORM, INPUT, SELECT e OPTION)</h3>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Introdução ao html</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h3>O que é HTML?</h3>
+  <h3>Tags</h3>
+  <h3>Estrutura de um documento HTML</h3>
+  <h3>Marcadores de estilo</h3>
+  <h3>Cabeçalhos (Head)</h3>  
+  <h3>Cores de texto e padrões de fundo</h3>
+  <h3>Imagens</h3>
+  <h3>Links</h3>
+  <hr>
+  <h3>Tabelas (table, tr, td, expansão de celulas, alinhamento, legenda)</h3>
+  <p>
+    Uma tabela HTML é definida com a &#60;table&#62; tag.
+    Cada linha da tabela é definida com a &#60;tr&#62; tag. 
+    Um cabeçalho da tabela é definido com a &#60;th&#62; tag. 
+    Por padrão, os títulos das tabelas estão em negrito e centralizados. 
+    Os dados/célula da tabela são definidos com a &#60;td&#62; tag.
+  </p>
+  <p>
+    Os &#60;td&#62; elementos são os contêineres de dados da tabela.
+    Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
+  </p>  
+
+  <p>Exemplo:</p>
+  <p>
+    <table border="1">
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td><p><img src="image/tabelaEstrutura.jpg"></p></td>
+        <td><p><img src="image/tabelaEstruturaResultado.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+  <h4>Adicionando uma borda</h4>
+  <p>
+    Se você não especificar uma borda para a tabela, ela será exibida sem bordas.
+    Uma borda é configurada usando a <i>border</i>i> propriedade CSSdentro do head.
+  </p>
+
+  <p>Exemplo 1 borda default:</p>
+  <p>
+    <table border="1">
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td><p><img src="image/tabelaBordaDupla.jpg"></p></td>
+        <td><p><img src="image/tabelaBordaDupla2.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+
+  <p>Exemplo 2 borda Collapsed:</p>
+  <p>
+    <table border="1">
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td><p><img src="image/tabelaBordaCollapse.jpg"></p></td>
+        <td><p><img src="image/tabelaBordaCollapse2.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+
+  <p>
+    Em uma tabela HTML para especificar o espaço entre o conteúdo da célula e suas bordas use a <i>padding</i> propriedade <b>CSS</b>:
+  </p>
+  <p
+  ><img src="image/tabelaBordaPadding.jpg">
+</p>
+  <p>
+    Por padrão, os títulos das tabelas estão em negrito e centralizados.
+    Para alinhar à esquerda os títulos da tabela, use a <i>text-align</i> propriedade <b>CSS</b> :
+  </p>
+  <p>
+    <img src="image/tabelaCabecalhoLeft.jpg">
+  </p>
+  <p>
+    Para fazer uma célula abranger mais de uma coluna, use o <i>colspan</i> atributo:
+  </p>
+  <p>
+    <table border="1">
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td><p><img src="image/tabelaOneToManyColumn.jpg"></p></td>
+        <td><p><img src="image/tabelaOneToManyColumn2.jpg"></p></td>
+      </tr>
+    </table>
+  </p>
+
+  <p>
+    Para fazer uma célula abranger mais de uma linha, use o <i>rowspan</i> atributo:
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Código</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td><p><img src="image/tabelaOneToManyRow.jpg"></p></td>
+      <td><p><img src="image/tabelaOneToManyRow2.jpg"></p></td>
+    </tr>
+  </table>
+</p>
+<p>
+  Para adicionar uma legenda a uma tabela, use a <i>&#60;caption&#62;</i> tag.
+  A <i>&#60;caption&#62;</i> tag deve ser inserida imediatamente após a <i>&#60;table&#62;</i> tag:
+</p>
+<p>
+  <img src="image/tabelaLegenda.jpg">
+</p>
+<p>
+  Para adicionar um estilo à uma tabela específica use <i>id</i> atributo à tabela:
+</p>
+<p>
+  <img src="image/tabelaSingleEstilo.jpg">
+</p>
+<hr>
+<h3>Formulários (FORM, INPUT, SELECT e OPTION)</h3>
+</body>
+</html>
