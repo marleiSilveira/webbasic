@@ -278,11 +278,11 @@
       </tr>
     </table>
     <h4>Imagens em outra pasta</h4>
-    <p>Se não especificado, o navegador espera encontrar a imagem na mesma pasta que a página da web.</p>
-    <p>No entanto, é comum armazenar imagens em uma subpasta. Você deve incluir o nome da pasta no srcatributo:</p>
+    <p> 
+      Se não especificado, o navegador espera encontrar a imagem na mesma pasta que a página da web. No entanto, é comum armazenar imagens em uma subpasta. Você deve incluir o nome da pasta no <i>src</i> atributo.
+    </p>
     <p>Exemplo:</p>
-    <!-- <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> -->
-    &#60;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&#62;
+    <!--&#60;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&#62;-->
     <table border="1">
       <tr>
         <td>
@@ -290,10 +290,9 @@
         </td>
       </tr>
     </table>
-
     <h4>Imagens em outro servidor</h4>
     <p>As imagens podem ser acessadas de qualquer endereço da web:</p>
-    &#60;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&#62;
+    <!--&#60;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&#62;-->
     <table border="1">
       <tr>
         <td>
@@ -301,205 +300,197 @@
         </td>
       </tr>
     </table>
-
-    <h4>Imagens animadas</h4>
+    <!--<h4>Imagens animadas</h4>
     <p>O HTML permite GIFs animados:</p>
     <p>Exemplo:</p>
-    &#60;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&#62;
-    <table border="1">
-      <tr>
-        <td>
-          <p><img src="image/imagemAnimada.jpg"></p>
-        </td>
-      </tr>
-    </table>
+    <p>&#60;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&#62;</p>
     <h4>Imagem como um link</h4>
     <p>Para usar uma imagem como um link, coloque a &#60;img&#62; tag dentro da &#60;a&#62; tag:</p>
     <p>Exemplo:</p>
+  -->
+  <p><b>Nota:</b> <i> border:0; </i> é adicionado para impedir o IE9 (e versões anteriores) de exibir uma borda ao redor da imagem (quando a imagem é um link).</p>
 
-    <p><b>Nota:</b> <i> border:0; </i> é adicionado para impedir o IE9 (e versões anteriores) de exibir uma borda ao redor da imagem (quando a imagem é um link).</p>
-
-    <p>Nos exemplos citados observe o que há em comum:</p>
-    <p>
-      <ul>
-        <li>Use o <img>elemento HTML para definir uma imagem</li>
-        <li>Use o src atributo HTML para definir o URL da imagem</li>
-        <li>Use o alt atributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida</li>
-        <li>Use o HTML widthe os height atributos para definir o tamanho da imagem</li>
-        <li>Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (como alternativa)</li>
-      </p>
-    </ul>
-    <p><b>
-      Carregar imagens leva tempo. Imagens grandes podem diminuir a velocidade da sua página. Use imagens com cuidado.
-    </b></p>
-  </p>
-  <hr>
-  <h3>Links</h3>
-  <p>Os links permitem que os usuários cliquem no caminho de uma página para outra. Podem ser texto , imagens ou um elemento html.
-  </p>
-  <h4>Hiperlinks</h4>
-  <p>Links HTML são hiperlinks.
-    Você pode clicar em um link e pular para outro documento.
-    Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.
-  </p>
-  <h4>Sintaxe</h4>
-  <p>Os hiperlinks são definidos com a &#60;a&#62; tag HTML.</p>
-  <!-- <a href="url">link text</a> -->
-  <p>Exemplo:
-    &#60;a href="https://www.w3schools.com/html/"&#62;Visit our HTML tutorial&#60;/a&#62;
-    O href atributo especifica o endereço de destino ( https://www.w3schools.com/html/ ) do link.
-  </p>
-  <p>O texto do link é a parte visível (visite nosso tutorial em HTML).
-    Ao clicar no texto do link, você será enviado para o endereço especificado.
-  </p>
-  <h4>Links Locais</h4>
-  <p>O exemplo anterior usou um URL absoluto (um endereço da Web completo).
-    Um link local (link para o mesmo site) é especificado com um URL relativo (sem https: // www ....).
-  </p>
-  <p>Exemplo:
-    <a href="html_images.asp">HTML Images</a>
-  </p>
-  <h4>O atributo de destino &#60;target&#62; </h4>
-  <p>O <i>target</i> atributo especifica onde abrir o documento vinculado.
-    O <i>target</i> atributo pode ter um dos seguintes valores:
-  </p>
+  <p>Nos exemplos citados observe o que há em comum:</p>
   <p>
     <ul>
-      <li><i>_blank</i> - Abre o documento vinculado em uma nova janela ou guia.</li>
-      <li><i>_self</i> - Abre o documento vinculado na mesma janela / guia em que foi clicado (isso é o padrão).</li>
-      <li><i>_parent</i> - Abre o documento vinculado no quadro pai.</li>
-      <li><i>_top</i> - Abre o documento vinculado no corpo inteiro da janela.</li>
-      <li><i>framename</i> - Abre o documento vinculado em um quadro nomeado.</li>
-    </ul>
-  </p>
-  <p>Este exemplo abrirá o documento vinculado em uma nova janela / guia do navegador:
-  </p>
-  <p>Exemplo:
-    &#60;a href="https://www.w3schools.com/" target="_blank"&#62;Visit W3Schools!&#60;/a&#62;
-  </p>
-  <h4>Imagem como um link</h4>
-  <p>É comum usar imagens como links:</p>
-  <p>Exemplo:</p>
-  <p>&#60;a href="default.asp"&#62;
-    &#60;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&#62;
-    &#60;/a&#62;
-  </p>
-  <h4>Botão como um link</h4>
-  <p>Para usar um botão HTML como um link, você precisa adicionar um código JavaScript.
-    O JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:
-  </p>
-  <p>Exemplo:
-  &#60;button onclick="document.location = 'default.asp'"&#62;HTML Tutorial&#60;/button&#62;</p>&#62;
+      <li>Use o <img>elemento HTML para definir uma imagem</li>
+      <li>Use o src atributo HTML para definir o URL da imagem</li>
+      <li>Use o alt atributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida</li>
+      <li>Use o HTML widthe os height atributos para definir o tamanho da imagem</li>
+      <li>Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (como alternativa)</li>
+    </p>
+  </ul>
+  <p><b>
+    Carregar imagens leva tempo. Imagens grandes podem diminuir a velocidade da sua página. Use imagens com cuidado.
+  </b></p>
+</p>
+<hr>
+<h3>Links</h3>
+<p>Os links permitem que os usuários cliquem no caminho de uma página para outra. Podem ser texto , imagens ou um elemento html.
+</p>
+<h4>Hiperlinks</h4>
+<p>Links HTML são hiperlinks.
+  Você pode clicar em um link e pular para outro documento.
+  Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.
+</p>
+<h4>Sintaxe</h4>
+<p>Os hiperlinks são definidos com a &#60;a&#62; tag HTML.</p>
+<!-- <a href="url">link text</a> -->
+<p>Exemplo:
+  &#60;a href="https://www.w3schools.com/html/"&#62;Visit our HTML tutorial&#60;/a&#62;
+  O href atributo especifica o endereço de destino ( https://www.w3schools.com/html/ ) do link.
+</p>
+<p>O texto do link é a parte visível (visite nosso tutorial em HTML).
+  Ao clicar no texto do link, você será enviado para o endereço especificado.
+</p>
+<h4>Links Locais</h4>
+<p>O exemplo anterior usou um URL absoluto (um endereço da Web completo).
+  Um link local (link para o mesmo site) é especificado com um URL relativo (sem https: // www ....).
+</p>
+<p>Exemplo:
+  <a href="html_images.asp">HTML Images</a>
+</p>
+<h4>O atributo de destino &#60;target&#62; </h4>
+<p>O <i>target</i> atributo especifica onde abrir o documento vinculado.
+  O <i>target</i> atributo pode ter um dos seguintes valores:
+</p>
+<p>
+  <ul>
+    <li><i>_blank</i> - Abre o documento vinculado em uma nova janela ou guia.</li>
+    <li><i>_self</i> - Abre o documento vinculado na mesma janela / guia em que foi clicado (isso é o padrão).</li>
+    <li><i>_parent</i> - Abre o documento vinculado no quadro pai.</li>
+    <li><i>_top</i> - Abre o documento vinculado no corpo inteiro da janela.</li>
+    <li><i>framename</i> - Abre o documento vinculado em um quadro nomeado.</li>
+  </ul>
+</p>
+<p>Este exemplo abrirá o documento vinculado em uma nova janela / guia do navegador:
+</p>
+<p>Exemplo:
+  &#60;a href="https://www.w3schools.com/" target="_blank"&#62;Visit W3Schools!&#60;/a&#62;
+</p>
+<h4>Imagem como um link</h4>
+<p>É comum usar imagens como links:</p>
+<p>Exemplo:</p>
+<p>&#60;a href="default.asp"&#62;
+  &#60;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&#62;
+  &#60;/a&#62;
+</p>
+<h4>Botão como um link</h4>
+<p>Para usar um botão HTML como um link, você precisa adicionar um código JavaScript.
+  O JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:
+</p>
+<p>Exemplo: 
+&#60;button onclick="document.location = 'default.asp'"&#62;HTML Tutorial&#60;/button&#62;</p>
 
-  <h4>Títulos de Link</h4>
-  <p>O titleatributo especifica informações extras sobre um elemento. As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse se move sobre o elemento.
-  </p>
-  <p>Exemplo:
-  &#60;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&#62;Visit our HTML Tutorial&#60;/a&#62;</p>
+<h4>Títulos de Link</h4>
+<p>O titleatributo especifica informações extras sobre um elemento. As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse se move sobre o elemento.
+</p>
+<p>Exemplo:
+&#60;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&#62;Visit our HTML Tutorial&#60;/a&#62;</p>
 
-  <h4>Tags de link HTML</h4>
-  <p>Para obter uma lista completa de todas as tags HTML disponíveis, visite nossa Referência de tags HTML .
-    <a href="https://www.w3schools.com/tags/default.asp//" target="_blank">Visit W3Schools/tags</a>.
-  </p>
+<h4>Tags de link HTML</h4>
+<p>Para obter uma lista completa de todas as tags HTML disponíveis, visite nossa Referência de tags HTML .
+  <a href="https://www.w3schools.com/tags/default.asp//" target="_blank">Visit W3Schools/tags</a>.
+</p>
 
-  <h4>Cores do link HTML</h4>
-  <p>Por padrão, um link aparecerá assim (em todos os navegadores):</p>
-  <p>
-    <ul>
-      <li>Um link não visitado está sublinhado e azul</li>
-      <li>Um link visitado está sublinhado e roxo</li>
-      <li>Um link ativo está sublinhado e vermelho</li>
-      <li>Você pode alterar as cores padrão usando <a href="https://www.w3schools.com/html/html_links_colors.asp" target="_blank">Cor/CSS</a>.</li>
-    </ul>
-  </p>
+<h4>Cores do link HTML</h4>
+<p>Por padrão, um link aparecerá assim (em todos os navegadores):</p>
+<p>
+  <ul>
+    <li>Um link não visitado está sublinhado e azul</li>
+    <li>Um link visitado está sublinhado e roxo</li>
+    <li>Um link ativo está sublinhado e vermelho</li>
+    <li>Você pode alterar as cores padrão usando <a href="https://www.w3schools.com/html/html_links_colors.asp" target="_blank">Cor/CSS</a>.</li>
+  </ul>
+</p>
 
-  <h4>Links HTML - Crie um marcador</h4>
-  <p>Marcadores HTML são usados ​​para permitir que os leitores pulem para partes específicas de uma página da Web.
-    Os marcadores podem ser úteis se uma página da web for muito longa.
-    Para criar um marcador - primeiro crie o marcador e adicione um link a ele.
-    Quando o link é clicado, a página rola para baixo ou para cima até o local com o marcador.
-  </p>
-  <p> Elementos:
-    <b>id</b> = " value " - para definir indicadores em uma página.
-    <b>href</b> = "# value "- para vincular ao marcador.
-  </p>
-  <p>Exemplo:</p>
-  <p>Primeiro, crie um marcador com o <i>id</i> tributo:
-    &#60;h2 id="C4"&#62;Chapter 4&#60;/h2&#62;
-  </p>
-  <p>Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:</p>
+<h4>Links HTML - Crie um marcador</h4>
+<p>Marcadores HTML são usados ​​para permitir que os leitores pulem para partes específicas de uma página da Web.
+  Os marcadores podem ser úteis se uma página da web for muito longa.
+  Para criar um marcador - primeiro crie o marcador e adicione um link a ele.
+  Quando o link é clicado, a página rola para baixo ou para cima até o local com o marcador.
+</p>
+<p> Elementos:
+  <b>id</b> = " value " - para definir indicadores em uma página.
+  <b>href</b> = "# value "- para vincular ao marcador.
+</p>
+<p>Exemplo:</p>
+<p>Primeiro, crie um marcador com o <i>id</i> tributo:
+  &#60;h2 id="C4"&#62;Chapter 4&#60;/h2&#62;
+</p>
+<p>Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:</p>
 
-  <p>Exemplo:</p>
-  <p>&#60;a href="#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
+<p>Exemplo:</p>
+<p>&#60;a href="#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
 
-  <p>Você também pode adicionar um link a um marcador em outra página:</p>
-  <p>&#60;a href="html_demo.html#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
+<p>Você também pode adicionar um link a um marcador em outra página:</p>
+<p>&#60;a href="html_demo.html#C4"&#62;Jump to Chapter 4&#60;/a&#62;</p>
 
-  <hr>
-  <h3>Tabelas (table, tr, td, expansão de celulas, alinhamento, legenda)</h3>
-  <p>
-    Uma tabela HTML é definida com a &#60;table&#62; tag.
-    Cada linha da tabela é definida com a &#60;tr&#62; tag.
-    Um cabeçalho da tabela é definido com a &#60;th&#62; tag.
-    Por padrão, os títulos das tabelas estão em negrito e centralizados.
-    Os dados/célula da tabela são definidos com a &#60;td&#62; tag.
-  </p>
-  <p>
-    Os &#60;td&#62; elementos são os contêineres de dados da tabela.
-    Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
-  </p>
+<hr>
+<h3>Tabelas (table, tr, td, expansão de celulas, alinhamento, legenda)</h3>
+<p>
+  Uma tabela HTML é definida com a &#60;table&#62; tag.
+  Cada linha da tabela é definida com a &#60;tr&#62; tag.
+  Um cabeçalho da tabela é definido com a &#60;th&#62; tag.
+  Por padrão, os títulos das tabelas estão em negrito e centralizados.
+  Os dados/célula da tabela são definidos com a &#60;td&#62; tag.
+</p>
+<p>
+  Os &#60;td&#62; elementos são os contêineres de dados da tabela.
+  Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
+</p>
 
-  <p>Exemplo:</p>
-  <p>
-    <table border="1">
-      <tr>
-        <th>Código</th>
-        <th>Resultado</th>
-      </tr>
-      <tr>
-        <td><p><img src="image/tabelaEstrutura.jpg"></p></td>
-        <td><p><img src="image/tabelaEstruturaResultado.jpg"></p></td>
-      </tr>
-    </table>
-  </p>
-  <h4>Adicionando uma borda</h4>
-  <p>
-    Se você não especificar uma borda para a tabela, ela será exibida sem bordas.
-    Uma borda é configurada usando a <i>border</i>i> propriedade CSSdentro do head.
-  </p>
+<p>Exemplo:</p>
+<p>
+  <table border="1">
+    <tr>
+      <th>Código</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td><p><img src="image/tabelaEstrutura.jpg"></p></td>
+      <td><p><img src="image/tabelaEstruturaResultado.jpg"></p></td>
+    </tr>
+  </table>
+</p>
+<h4>Adicionando uma borda</h4>
+<p>
+  Se você não especificar uma borda para a tabela, ela será exibida sem bordas.
+  Uma borda é configurada usando a <i>border</i>i> propriedade CSSdentro do head.
+</p>
 
-  <p>Exemplo 1 borda default:</p>
-  <p>
-    <table border="1">
-      <tr>
-        <th>Código</th>
-        <th>Resultado</th>
-      </tr>
-      <tr>
-        <td><p><img src="image/tabelaBordaDupla.jpg"></p></td>
-        <td><p><img src="image/tabelaBordaDupla2.jpg"></p></td>
-      </tr>
-    </table>
-  </p>
+<p>Exemplo 1 borda default:</p>
+<p>
+  <table border="1">
+    <tr>
+      <th>Código</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td><p><img src="image/tabelaBordaDupla.jpg"></p></td>
+      <td><p><img src="image/tabelaBordaDupla2.jpg"></p></td>
+    </tr>
+  </table>
+</p>
 
-  <p>Exemplo 2 borda Collapsed:</p>
-  <p>
-    <table border="1">
-      <tr>
-        <th>Código</th>
-        <th>Resultado</th>
-      </tr>
-      <tr>
-        <td><p><img src="image/tabelaBordaCollapse.jpg"></p></td>
-        <td><p><img src="image/tabelaBordaCollapse2.jpg"></p></td>
-      </tr>
-    </table>
-  </p>
-  <p>
-    Em uma tabela HTML para especificar o espaço entre o conteúdo da célula e suas bordas use a <i>padding</i> propriedade <b>CSS</b>:
-  </p>
-  <p
-  ><img src="image/tabelaBordaPadding.jpg">
+<p>Exemplo 2 borda Collapsed:</p>
+<p>
+  <table border="1">
+    <tr>
+      <th>Código</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td><p><img src="image/tabelaBordaCollapse.jpg"></p></td>
+      <td><p><img src="image/tabelaBordaCollapse2.jpg"></p></td>
+    </tr>
+  </table>
+</p>
+<p>
+  Em uma tabela HTML para especificar o espaço entre o conteúdo da célula e suas bordas use a <i>padding</i> propriedade <b>CSS</b>:
+</p>
+<p
+><img src="image/tabelaBordaPadding.jpg">
 </p>
 <p>
   Por padrão, os títulos das tabelas estão em negrito e centralizados.
@@ -622,10 +613,36 @@
 <p>Exemplo:</p>
 <p><img src="image/formularioOptionVisivel.jpg"></p>
 <p> 
-  Permitir várias seleções:  Use o multiple atributo para permitir que o usuário selecione mais de um valor:
+  Permitir várias seleções:  Use o <i>multiple</i> atributo para permitir que o usuário selecione mais de um valor:
 </p>
 <p>Exemplo:</p>
 <p><img src="image/formularioOptionVisivelMultiplo.jpg"></p>
+
+
+<hr>
+<h1>CSS</h1>
+<h3>Estrutura e aplicação</h3>
+<p>
+  <ul>
+    <li>CSS significa <b>Cascading Style Sheets</b></li>
+    <li>Descreve como os elementos HTML devem ser exibidos na tela, papel ou em outra mídia</li>
+    <li>Economiza muito trabalho . Ele pode controlar o layout de várias páginas da web de uma só vez</li>
+    <li>Folhas de estilo externas são armazenadas em arquivos CSS.</li>
+  </ul>
+</p>
+<h4>Sintaxe CSS</h4>  
+<p> 
+  Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:
+</p>
+<p><img src="image/cssSintax.jpg"></p>
+<p>
+  O seletor aponta para o elemento HTML que você deseja estilizar.
+  O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.
+  Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+  Uma declaração CSS sempre termina com ponto e vírgula e os blocos de declaração são cercados por chaves.
+</p>
+
+
 
 <hr>
 <p>Referências:<br>
@@ -634,6 +651,6 @@
   <a href="http://newhtml5.blogspot.com/2011/03/novas-tag.html">newhtml5.blogspot.com</a><br>
   <a href="https://code.tutsplus.com/pt/tutorials/28-html5-features-tips-and-techniques-you-must-know--net-13520">code.tutsplus.com</a><br>
 </p>
-</body>
 
+</body>
 </html>
