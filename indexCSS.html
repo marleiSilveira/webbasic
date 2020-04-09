@@ -3,9 +3,25 @@
 <head>
 	<title>Introdução ao CSS</title>
 	<meta charset="utf-8">
+	<style>
+		p1 {text-decoration: underline;}
+
+		table {
+	  border-collapse: collapse;
+	  width: 100%;
+		}
+
+		th, td {
+	  text-align: left;
+	  padding: 8px;
+		}
+
+		tr:nth-child(even) {background-color: #f2f2f2;}
+
+	</style>
 </head>
 <body>
-	
+
 	<h3>Estrutura e aplicação</h3>
 	<p>
 		<ul>
@@ -15,8 +31,8 @@
 			<li>Folhas de estilo externas são armazenadas em arquivos CSS.</li>
 		</ul>
 	</p>
-	<h4>Sintaxe CSS</h4>	
-	<p>	
+	<h4>Sintaxe CSS</h4>
+	<p>
 		Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:
 	</p>
 	<p><img src="image/cssSintax.jpg"></p>
@@ -212,7 +228,7 @@
 	      <li><i>font-variant</i></li>
 	      <li><i>font-weight</i></li>
 	      <li><i>font-size/line-height</i></li>
-	      <li><i>font-family</i></li> 
+	      <li><i>font-family</i></li>
 	    </ul>
 	 </p>
 	<p>Os valores <b>font-size</b> e <b>font-family</b> são obrigatórios. Se um dos outros valores estiver ausente, o valor padrão será usado.</p>
@@ -249,7 +265,7 @@
 	    <ul>
 	      	<li><i>border-width</i></li>
 	     	<li><i>border-style (requeridos)</i></li>
-	     	<li><i>border-color</i></li> 
+	     	<li><i>border-color</i></li>
 	    </ul>
 	</p>
 	<p>Exemplo:</p>
@@ -278,7 +294,7 @@
 	    <ul>
 	      	<li><i>margin-top</i></li>
 	     	<li><i>margin-right</i></li>
-	     	<li><i>margin-bottom</i></li> 
+	     	<li><i>margin-bottom</i></li>
 	     	<li><i>margin-left</i></li>
 	    </ul>
 	</p>
@@ -287,7 +303,7 @@
 	    <ul>
 	      	<li><i>auto</i>o navegador calcula a margem</li>
 	     	<li><i>length</i>especifica uma margem em px, pt, cm etc.</li>
-	     	<li><i>%</i>especifica uma margem em% da largura do elemento que contém</li> 
+	     	<li><i>%</i>especifica uma margem em% da largura do elemento que contém</li>
 	     	<li><i>inherit</i>especifica que a margem deve ser herdada do elemento pai</li>
 	    </ul>
 	</p>
@@ -308,7 +324,7 @@
 	    <ul>
 	      	<li><i>padding-top</i></li>
 	     	<li><i>padding-right</i></li>
-	     	<li><i>padding-bottom</i></li> 
+	     	<li><i>padding-bottom</i></li>
 	     	<li><i>padding-left</i></li>
 	    </ul>
 	</p>
@@ -316,13 +332,13 @@
 	<p>
 	    <ul>
 	     	<li><i>length</i>especifica um preenchimento em px, pt, cm etc.</li>
-	     	<li><i>%</i>especifica uma preenchimento em <b>%</b> da largura do elemento que contém</li> 
+	     	<li><i>%</i>especifica uma preenchimento em <b>%</b> da largura do elemento que contém</li>
 	     	<li><i>inherit</i>especifica que a preenchimento deve ser herdada do elemento pai</li>
 	    </ul>
 	</p>
-	<p>O exemplo abaixo define o preenchimento diferente para todos os quatro lados de um elemento &#60;div&#62;:</p>  
-	<p><img src="image/cssPadding.jpg"></p>   
-	
+	<p>O exemplo abaixo define o preenchimento diferente para todos os quatro lados de um elemento &#60;div&#62;:</p>
+	<p><img src="image/cssPadding.jpg"></p>
+
 	<p>Para encurtar o código, é possível especificar todas as propriedades da <i>padding</i> em uma propriedade <i>ShortHands.</i>
 	<p>Exemplo de preencimento com propriedade reduzida:</p>
 	<p><img src="image/cssPaddingShorthand.jpg"></p>
@@ -330,14 +346,14 @@
 
 	<h4>Tabela</h4>
 	<p>A aparência de uma tabela HTML pode ser bastante aprimorada com CSS.</p>
-	
+
 	<p><b>Bordas da tabela</b></p>
 	<p>Para especificar bordas da tabela em CSS, use a <i>border</i> propriedade.</p>
-	<p>Exemplo de especificação de bordas preta separadas para os elementos &#60;table&#62;, &#60;th&#62; e &#60;td&#62;:</p> 
+	<p>Exemplo de especificação de bordas preta separadas para os elementos &#60;table&#62;, &#60;th&#62; e &#60;td&#62;:</p>
 	<p><img src="image/cssTabelaBorda.jpg"></p>
-	
+
 	<p><b>Recolher bordas da tabela</b></p>
-	<p>A <i>border-collapse</i> propriedade define se as bordas da tabela devem ser recolhidas em uma única borda:</p> 
+	<p>A <i>border-collapse</i> propriedade define se as bordas da tabela devem ser recolhidas em uma única borda:</p>
 	<p><img src="image/cssTabelaBordaRecolher.jpg"></p>
 	<p>Se você deseja apenas uma borda ao redor da tabela, especifique apenas a border propriedade para &#60;table&#62;</p>
 
@@ -346,15 +362,15 @@
 	<p><img src="image/cssTabelaBordaTamanho.jpg"></p>
 
 	<p><b>Alinhamento horizontal</b></p>
-	<p>A <i>text-align</i> propriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o conteúdo dos elementos &#60;th&#62; é alinhado ao centro e o conteúdo dos elementos &#60;td&#62; é alinhado à esquerda. O exemplo a seguir alinha o texto à esquerda em &#60;th&#62; elementos:</p> 
+	<p>A <i>text-align</i> propriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o conteúdo dos elementos &#60;th&#62; é alinhado ao centro e o conteúdo dos elementos &#60;td&#62; é alinhado à esquerda. O exemplo a seguir alinha o texto à esquerda em &#60;th&#62; elementos:</p>
 	<p><img src="image/cssTabelaAlinharHorizontal.jpg"></p>
 
 	<p><b>Alinhamento vertical</b></p>
-	<p>A <i>vertical-align</i> propriedade define o alinhamento vertical (como superior, inferior ou central) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o alinhamento vertical do conteúdo em uma tabela é middle para os elementos. O exemplo a seguir define o alinhamento vertical do texto na parte inferior dos elementos &#60;th&#62;:</p> 
+	<p>A <i>vertical-align</i> propriedade define o alinhamento vertical (como superior, inferior ou central) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o alinhamento vertical do conteúdo em uma tabela é middle para os elementos. O exemplo a seguir define o alinhamento vertical do texto na parte inferior dos elementos &#60;th&#62;:</p>
 	<p><img src="image/cssTabelaAlinharVertical.jpg"></p>
 
 	<p><b>Table Padding</b></p>
-	<p>Para controlar o espaço entre a borda e o conteúdo em uma tabela, use a <i>padding</i> propriedade nos elementos &#60;th&#62; e &#60;td&#62;:</p> 
+	<p>Para controlar o espaço entre a borda e o conteúdo em uma tabela, use a <i>padding</i> propriedade nos elementos &#60;th&#62; e &#60;td&#62;:</p>
 	<p><img src="image/cssTabelaPadding.jpg"></p>
 
 	<p><b>Tabelas Striped</b></p>
