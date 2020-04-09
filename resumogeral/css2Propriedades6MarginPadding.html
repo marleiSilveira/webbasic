@@ -9,66 +9,68 @@
 	<hr>
 	<h3>Propriedades</h3>
 	<h4>Cores</h4>
-
-	<h4>Plano de Fundo</h4>
-	<p>
-		As propriedades de segundo plano do CSS são usadas para definir os efeitos de segundo plano para os elementos.
-	</p>
-
-	<p><b>Cor de fundo<p></b>
-	<p>A <i>background-color</i> propriedade especifica a cor de fundo de um elemento.</p>
-	<p>O código a segiur exibe o fundo integral da página em azul claro:</p>
-	<p><img src="image/cssCorBackgroudPagina.jpg"></p>
-	<p><img src="image/cssCorBackgroudPagina2.jpg"></p>
-	<p>
-		Pode ser definido a cor do plano de fundo para qualquer elemento HTML.
-		Por exemplo, os elementos &#60;h1&#62;, &#60;p&#62; e &#60;div&#62; terão cores de fundo diferentes:
-	</p>
-	<p><img src="image/cssCorBackgroudElemento.jpg"></p>
-	<p><img src="image/cssCorBackgroudElemento2.jpg"></p>
-
-	<p><b>Imagem de fundo<p></b>
-	<p>A <i>background-image</i> propriedade define a cor de fundo de um elemento usando uma imagem.</p>
-	<p>Para utilizar basta definir a propriedade no head com a <i>url</i> específica:</p>
-	<p><img src="image/cssCorBackgroudImage.jpg"></p>
-
-	<p><b>Fundo de repetição<p></b>
-	<p>Uma imagem pode ser repetida no fundo gradualmente, de forma horizontal ou vertical:</p>
-	<p><img src="image/cssCorBackgroudRepeatX.jpg"></p>
-	<p><img src="image/cssCorBackgroudRepeatX2.jpg"></p>
-	<p>Com <b>background-repeat: no-repeat;</b>, a imagem aparece apenas uma vez.</p>
-    <p>Com <b>background-position: right top;</b>, a imagem é posicionada no canto superior direito da página.</p>
-	<p><img src="image/cssCorBackgroudPosicao.jpg"></p>
-
-	<p><b>Anexo de fundo<p></b>
-	<p>A <b>background-attachment</b> propriedade especifica se a imagem de plano de fundo deve rolar com a página ou ser fixa.</p>
-	<p>Para imagens fixas faça:</p>
-	<p><img src="image/cssCorFundoAnexoFixo.jpg"></p>
-	<p>Para imagens que devem se movimentar com a página faça:</p>
-	<p><img src="image/cssCorFundoAnexoScroll.jpg"></p>
-
-	<p><b>Propriedade Shorthand<p></b>
-	<p>Para reduzir o código, também é possível especificar todas as propriedades de segundo plano em uma única propriedade. Isso é chamado de propriedade Shorthand (abreviada).</p>
-	<p>Em vez de escrever:</p>
-	<p><img src="image/cssPropriedadeShorthand.jpg"></p>
-	<p>Use a propriedade abreviada:</p>
-	<p><img src="image/cssPropriedadeShorthand2.jpg"></p>
-	<p>A ordem dos valores da propriedade é:</p>
-	<p><img src="image/cssPropriedadeShorthandOrdem.jpg"></p>
-	<p>Não importa se um dos valores da propriedade está ausente, desde que os outros estejam nessa ordem.</p>
-	
+	<h4>Plano de Fundo</h4>	
 	<h4>Texto</h4>
-	<p>
-	</p>
 	<h4>Fonte</h4>
-	<p>
-	</p>
 	<h4>Borda</h4>
+
+	<h4>Margin</h4>
+	<p>As <i>margin</i> propriedades CSS são usadas para criar espaço em torno dos elementos, fora de quaisquer bordas definidas. Existem propriedades para definir a margem para cada lado de um elemento (superior, direito, inferior e esquerdo:</p>
 	<p>
+	    <ul>
+	      	<li><i>margin-top</i></li>
+	     	<li><i>margin-right</i></li>
+	     	<li><i>margin-bottom</i></li> 
+	     	<li><i>margin-left</i></li>
+	    </ul>
 	</p>
-	<h4>Margin e Padding</h4>
+	<p>As propriedades da margem podem ter os seguintes valores:</p>
 	<p>
+	    <ul>
+	      	<li><i>auto</i>o navegador calcula a margem</li>
+	     	<li><i>length</i>especifica uma margem em px, pt, cm etc.</li>
+	     	<li><i>%</i>especifica uma margem em% da largura do elemento que contém</li> 
+	     	<li><i>inherit</i>especifica que a margem deve ser herdada do elemento pai</li>
+	    </ul>
 	</p>
+	<p>Exemplo de margem com valores diferentes:</p>
+	<p><img src="image/cssMarginIndividualSides.jpg"></p>
+
+	<p>Para encurtar o código, é possível especificar todas as propriedades da margem em uma propriedade <i>ShortHands.</i>
+	<p>Exemplo de margem com propriedade reduzida:</p>
+	<p><img src="image/cssMarginShortHands.jpg"></p>
+
+	<p>Pode ser definido a propriedade de margem <i>auto</i> para centralizar horizontalmente o elemento no contêiner. O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.</p>
+	<p>Exemplo de margem com propriedade Auto:</p>
+	<p><img src="image/cssMarginAuto.jpg"></p>
+
+	<h4>Padding (preenchimento)</h4>
+	<p>As <i>padding</i> propriedades CSS são usadas para gerar espaço em torno do conteúdo de um elemento, dentro de qualquer borda definida. Em CSS existem propriedades para definir o preenchimento para cada lado de um elemento (superior, direito, inferior e esquerdo):</p>
+	<p>
+	    <ul>
+	      	<li><i>padding-top</i></li>
+	     	<li><i>padding-right</i></li>
+	     	<li><i>padding-bottom</i></li> 
+	     	<li><i>padding-left</i></li>
+	    </ul>
+	</p>
+	<p>As propriedades da preenchimento podem ter os seguintes valores:</p>
+	<p>
+	    <ul>
+	     	<li><i>length</i>especifica um preenchimento em px, pt, cm etc.</li>
+	     	<li><i>%</i>especifica uma preenchimento em <b>%</b> da largura do elemento que contém</li> 
+	     	<li><i>inherit</i>especifica que a preenchimento deve ser herdada do elemento pai</li>
+	    </ul>
+	</p>
+	<p>O exemplo abaixo define o preenchimento diferente para todos os quatro lados de um elemento &#60;div&#62;:</p>  
+	<p><img src="image/cssPadding.jpg"></p>   
+	
+	<p>Para encurtar o código, é possível especificar todas as propriedades da <i>padding</i> em uma propriedade <i>ShortHands.</i>
+	<p>Exemplo de preencimento com propriedade reduzida:</p>
+	<p><img src="image/cssPaddingShorthand.jpg"></p>
+
+
+
 	<h4>Tabela</h4>
 	<p>
 	</p>
@@ -76,13 +78,6 @@
 
 	<p>
 		Exemplos podem ser encontrados no site da <a href="https://www.w3schools.com/css/css_examples.asp">w3schools</a>.
-	</p>
-
-
-
-	<h4></h4>	
-
-	<p>
 	</p>
 
 	<hr>
