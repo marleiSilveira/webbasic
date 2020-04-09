@@ -3,88 +3,137 @@
 <head>
 	<title>Introdução ao CSS</title>
 	<meta charset="utf-8">
+		<style>
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	th, td {
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	</style>
 </head>
 <body>	
 	<h3>Estrutura e aplicação</h3>
 	<hr>
 	<h3>Propriedades</h3>
 	<h4>Cores</h4>
-
-	<h4>Plano de Fundo</h4>
-	<p>
-		As propriedades de segundo plano do CSS são usadas para definir os efeitos de segundo plano para os elementos.
-	</p>
-
-	<p><b>Cor de fundo<p></b>
-	<p>A <i>background-color</i> propriedade especifica a cor de fundo de um elemento.</p>
-	<p>O código a segiur exibe o fundo integral da página em azul claro:</p>
-	<p><img src="image/cssCorBackgroudPagina.jpg"></p>
-	<p><img src="image/cssCorBackgroudPagina2.jpg"></p>
-	<p>
-		Pode ser definido a cor do plano de fundo para qualquer elemento HTML.
-		Por exemplo, os elementos &#60;h1&#62;, &#60;p&#62; e &#60;div&#62; terão cores de fundo diferentes:
-	</p>
-	<p><img src="image/cssCorBackgroudElemento.jpg"></p>
-	<p><img src="image/cssCorBackgroudElemento2.jpg"></p>
-
-	<p><b>Imagem de fundo<p></b>
-	<p>A <i>background-image</i> propriedade define a cor de fundo de um elemento usando uma imagem.</p>
-	<p>Para utilizar basta definir a propriedade no head com a <i>url</i> específica:</p>
-	<p><img src="image/cssCorBackgroudImage.jpg"></p>
-
-	<p><b>Fundo de repetição<p></b>
-	<p>Uma imagem pode ser repetida no fundo gradualmente, de forma horizontal ou vertical:</p>
-	<p><img src="image/cssCorBackgroudRepeatX.jpg"></p>
-	<p><img src="image/cssCorBackgroudRepeatX2.jpg"></p>
-	<p>Com <b>background-repeat: no-repeat;</b>, a imagem aparece apenas uma vez.</p>
-    <p>Com <b>background-position: right top;</b>, a imagem é posicionada no canto superior direito da página.</p>
-	<p><img src="image/cssCorBackgroudPosicao.jpg"></p>
-
-	<p><b>Anexo de fundo<p></b>
-	<p>A <b>background-attachment</b> propriedade especifica se a imagem de plano de fundo deve rolar com a página ou ser fixa.</p>
-	<p>Para imagens fixas faça:</p>
-	<p><img src="image/cssCorFundoAnexoFixo.jpg"></p>
-	<p>Para imagens que devem se movimentar com a página faça:</p>
-	<p><img src="image/cssCorFundoAnexoScroll.jpg"></p>
-
-	<p><b>Propriedade Shorthand<p></b>
-	<p>Para reduzir o código, também é possível especificar todas as propriedades de segundo plano em uma única propriedade. Isso é chamado de propriedade Shorthand (abreviada).</p>
-	<p>Em vez de escrever:</p>
-	<p><img src="image/cssPropriedadeShorthand.jpg"></p>
-	<p>Use a propriedade abreviada:</p>
-	<p><img src="image/cssPropriedadeShorthand2.jpg"></p>
-	<p>A ordem dos valores da propriedade é:</p>
-	<p><img src="image/cssPropriedadeShorthandOrdem.jpg"></p>
-	<p>Não importa se um dos valores da propriedade está ausente, desde que os outros estejam nessa ordem.</p>
-	
+	<h4>Plano de Fundo</h4>	
 	<h4>Texto</h4>
-	<p>
-	</p>
 	<h4>Fonte</h4>
-	<p>
-	</p>
 	<h4>Borda</h4>
-	<p>
-	</p>
 	<h4>Margin e Padding</h4>
-	<p>
-	</p>
+	
 	<h4>Tabela</h4>
-	<p>
-	</p>
+	<p>A aparência de uma tabela HTML pode ser bastante aprimorada com CSS.</p>
+	
+	<p><b>Bordas da tabela</b></p>
+	<p>Para especificar bordas da tabela em CSS, use a <i>border</i> propriedade.</p>
+	<p>Exemplo de especificação de bordas preta separadas para os elementos &#60;table&#62;, &#60;th&#62; e &#60;td&#62;:</p> 
+	<p><img src="image/cssTabelaBorda.jpg"></p>
+	
+	<p><b>Recolher bordas da tabela</b></p>
+	<p>A <i>border-collapse</i> propriedade define se as bordas da tabela devem ser recolhidas em uma única borda:</p> 
+	<p><img src="image/cssTabelaBordaRecolher.jpg"></p>
+	<p>Se você deseja apenas uma borda ao redor da tabela, especifique apenas a border propriedade para &#60;table&#62;</p>
 
+	<p><b>Largura e altura da tabela</b></p>
+	<p>São definidas pelas propriedades <i>widthe</i> e <i>height</i>. O exemplo abaixo define a largura da tabela para 50% e a altura dos &#60;th&#62; elementos para 25px:</p>
+	<p><img src="image/cssTabelaBordaTamanho.jpg"></p>
 
+	<p><b>Alinhamento horizontal</b></p>
+	<p>A <i>text-align</i> propriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o conteúdo dos elementos &#60;th&#62; é alinhado ao centro e o conteúdo dos elementos &#60;td&#62; é alinhado à esquerda. O exemplo a seguir alinha o texto à esquerda em &#60;th&#62; elementos:</p> 
+	<p><img src="image/cssTabelaAlinharHorizontal.jpg"></p>
+
+	<p><b>Alinhamento vertical</b></p>
+	<p>A <i>vertical-align</i> propriedade define o alinhamento vertical (como superior, inferior ou central) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o alinhamento vertical do conteúdo em uma tabela é middle para os elementos. O exemplo a seguir define o alinhamento vertical do texto na parte inferior dos elementos &#60;th&#62;:</p> 
+	<p><img src="image/cssTabelaAlinharVertical.jpg"></p>
+
+	<p><b>Table Padding</b></p>
+	<p>Para controlar o espaço entre a borda e o conteúdo em uma tabela, use a <i>padding</i> propriedade nos elementos &#60;th&#62; e &#60;td&#62;:</p> 
+	<p><img src="image/cssTabelaPadding.jpg"></p>
+
+	<p><b>Tabelas Striped</b></p>
+	<p>Para tabelas zebra-striped, use o <b>nth-child()</b> seletor e adicione <i>background-color</i> a todas as linhas pares (ou ímpares) da tabela:</p>
+	<p><img src="image/cssTabelaStriped.jpg"></p>
+
+	<p><b>Cor da tabela</b></p>
+	<p>O exemplo abaixo especifica a cor do plano de fundo e a cor do texto dos &#60;th&#62; elementos:</p>
+	<p><img src="image/cssTabelaCor.jpg"></p>
+
+	<p><b>Tabela Responsive </b></p>
+	<p>Uma tabela responsive exibirá uma barra de rolagem horizontal se a tela for muito pequena para exibir o conteúdo completo. Adicione um elemento de contêiner (como &#60;div&#62;) com <b>overflow-x:auto</b> ao redor de &#60;table&#62; para torná-lo responsivo: </p>
+	<p>Exemplo:</p> <p><img src="image/cssTabelaResponsive.jpg"></p>
+	<br><br>
+	<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+
+<br><br>
 	<p>
 		Exemplos podem ser encontrados no site da <a href="https://www.w3schools.com/css/css_examples.asp">w3schools</a>.
 	</p>
-
-
-
-	<h4></h4>	
-
-	<p>
-	</p>
-
 	<hr>
 </body>
 </html>
