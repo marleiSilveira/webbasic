@@ -9,63 +9,61 @@
 	<hr>
 	<h3>Propriedades</h3>
 	<h4>Cores</h4>
-
-	<h4>Plano de Fundo</h4>
-	<p>
-		As propriedades de segundo plano do CSS são usadas para definir os efeitos de segundo plano para os elementos.
-	</p>
-
-	<p><b>Cor de fundo<p></b>
-	<p>A <i>background-color</i> propriedade especifica a cor de fundo de um elemento.</p>
-	<p>O código a segiur exibe o fundo integral da página em azul claro:</p>
-	<p><img src="image/cssCorBackgroudPagina.jpg"></p>
-	<p><img src="image/cssCorBackgroudPagina2.jpg"></p>
-	<p>
-		Pode ser definido a cor do plano de fundo para qualquer elemento HTML.
-		Por exemplo, os elementos &#60;h1&#62;, &#60;p&#62; e &#60;div&#62; terão cores de fundo diferentes:
-	</p>
-	<p><img src="image/cssCorBackgroudElemento.jpg"></p>
-	<p><img src="image/cssCorBackgroudElemento2.jpg"></p>
-
-	<p><b>Imagem de fundo<p></b>
-	<p>A <i>background-image</i> propriedade define a cor de fundo de um elemento usando uma imagem.</p>
-	<p>Para utilizar basta definir a propriedade no head com a <i>url</i> específica:</p>
-	<p><img src="image/cssCorBackgroudImage.jpg"></p>
-
-	<p><b>Fundo de repetição<p></b>
-	<p>Uma imagem pode ser repetida no fundo gradualmente, de forma horizontal ou vertical:</p>
-	<p><img src="image/cssCorBackgroudRepeatX.jpg"></p>
-	<p><img src="image/cssCorBackgroudRepeatX2.jpg"></p>
-	<p>Com <b>background-repeat: no-repeat;</b>, a imagem aparece apenas uma vez.</p>
-    <p>Com <b>background-position: right top;</b>, a imagem é posicionada no canto superior direito da página.</p>
-	<p><img src="image/cssCorBackgroudPosicao.jpg"></p>
-
-	<p><b>Anexo de fundo<p></b>
-	<p>A <b>background-attachment</b> propriedade especifica se a imagem de plano de fundo deve rolar com a página ou ser fixa.</p>
-	<p>Para imagens fixas faça:</p>
-	<p><img src="image/cssCorFundoAnexoFixo.jpg"></p>
-	<p>Para imagens que devem se movimentar com a página faça:</p>
-	<p><img src="image/cssCorFundoAnexoScroll.jpg"></p>
-
-	<p><b>Propriedade Shorthand<p></b>
-	<p>Para reduzir o código, também é possível especificar todas as propriedades de segundo plano em uma única propriedade. Isso é chamado de propriedade Shorthand (abreviada).</p>
-	<p>Em vez de escrever:</p>
-	<p><img src="image/cssPropriedadeShorthand.jpg"></p>
-	<p>Use a propriedade abreviada:</p>
-	<p><img src="image/cssPropriedadeShorthand2.jpg"></p>
-	<p>A ordem dos valores da propriedade é:</p>
-	<p><img src="image/cssPropriedadeShorthandOrdem.jpg"></p>
-	<p>Não importa se um dos valores da propriedade está ausente, desde que os outros estejam nessa ordem.</p>
-	
+	<h4>Plano de Fundo</h4>	
 	<h4>Texto</h4>
-	<p>
-	</p>
 	<h4>Fonte</h4>
-	<p>
-	</p>
+
 	<h4>Borda</h4>
-	<p>
+	<p>As <i>border</i> propriedades CSS permitem especificar o estilo, largura e cor da borda de um elemento. A <i>border-style</i> propriedade especifica que tipo de borda a ser exibida. Os seguintes valores são permitidos:
 	</p>
+	<p><img src="image/cssBordaEstilo.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaEstilo2.jpg"></p>
+
+	<p><b>Largura das bordas</b></p>
+	<p>A <i>border-width</i> propriedade especifica a largura das quatro bordas. A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso:</p>
+	<p><img src="image/cssBordaLargura.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaLargura2.jpg"></p>
+
+	<p>É possível ter valores diferentes para cada lado da borda. A <i>border-width</i> propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda), observe os valores abaixo:</p>
+	<p><img src="image/cssBordaLarguraDiferente.jpg"></p>
+
+	<p><b>Cor das bordas</b></p><!--Em "css.cor" deve ser iserido umlink para o titulo cor em css neste trabalho-->
+	<p>A cor da borda segue o mesmo padrão que em <b>css.cor</b>, explicadas anteriormente (RGB, HEX, HSL, RGBA e HSLA).</p>
+	<p><img src="image/cssBordaCor.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaCor2.jpg"></p>
+
+	<p><b>Bordas Shorthand ou abreviadas</b></p>
+	<p>A <i>border</i> é uma propriedade abreviada para as seguintes propriedades de borda individuais:</p>
+	<p>
+	    <ul>
+	      	<li><i>border-width</i></li>
+	     	<li><i>border-style (requeridos)</i></li>
+	     	<li><i>border-color</i></li> 
+	    </ul>
+	</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaShorthand.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaShorthand2.jpg"></p>
+
+	<p>Também pode especificar todas as propriedades de borda individuais para apenas um lado.</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaShorthandOneSide.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaShorthandOneSide2.jpg"></p>
+
+	<p><b>Bordas arredondadas</b></p>
+	<p>A <i>border-radius</i> propriedade é usada para adicionar bordas arredondadas a um elemento:</p>
+	<p>A borda pode ser arredondadas de grau maior ou menor.</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaRadius.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaRadius2.jpg"></p>
+
+
 	<h4>Margin e Padding</h4>
 	<p>
 	</p>
@@ -76,13 +74,6 @@
 
 	<p>
 		Exemplos podem ser encontrados no site da <a href="https://www.w3schools.com/css/css_examples.asp">w3schools</a>.
-	</p>
-
-
-
-	<h4></h4>	
-
-	<p>
 	</p>
 
 	<hr>
