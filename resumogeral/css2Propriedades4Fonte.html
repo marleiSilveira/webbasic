@@ -3,6 +3,9 @@
 <head>
 	<title>Introdução ao CSS</title>
 	<meta charset="utf-8">
+	<style> 
+		p1 {text-decoration: underline;}
+	</style>
 </head>
 <body>	
 	<h3>Estrutura e aplicação</h3>
@@ -11,12 +14,73 @@
 	<h4>Cores</h4>
 	<h4>Plano de Fundo</h4>	
 	<h4>Texto</h4>
-
+	
 	<h4>Fonte</h4>
-	<p>
-	</p>
+	<p>No CSS, existem dois tipos de nomes de família de fontes:</p>
+	<p><p1>generic family:</p1> um grupo de famílias de fontes com aparência semelhante (como "Serif" ou "Monospace")</p>
+	<p><p1>generic font:</p1> uma família de fontes específica (como "Times New Roman" ou "Arial")</p>
+	<p>A família da fonte de um texto é definida com a <i>font-family</i> propriedade.</p>
+	<p>A <i>font-family</i> propriedade deve conter vários nomes de fontes como um sistema de "fallback". Se o navegador não suportar a primeira fonte, ele tenta a próxima fonte e assim por diante.</p>
+	<p>Se o nome de uma família de fontes tiver mais de uma palavra, ele deverá estar entre aspas, como: "Times New Roman". Mais de uma família de fontes é especificada em uma lista separada por vírgula:</p>
+	<p><img src="image/cssFontFamily.jpg"></p>
+	<p><img src="image/cssFontFamily2.jpg"></p>
+
+	<p><b>Estilo de fonte</b></p>
+	<p>A <i>font-style</i> propriedade é usada principalmente para especificar texto em itálico. Esta propriedade possui três valores:</p>
+  	<p>
+   	    <ul>
+     	 	<li><i>normal</i> o texto é mostrado normalmente</li>
+     	 	<li><i>itálico</i> o texto é mostrado em itálico</li>
+     		 <li><i>oblíquo</i> o texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado)</li>
+    	</ul>
+    </p>
+    <p>Exemplo:</p>
+	<p><img src="image/cssFontEstilo.jpg"></p>
+	<p><img src="image/cssFontEstilo2.jpg"></p>
+
+	<p><b>Espessura da fonte</b></p>
+	<p>A <i>font-weight</i> propriedade especifica o peso de uma fonte:</p>
+	<p><img src="image/cssFontEspessura.jpg"></p>
+	<p><img src="image/cssFontEspessura2.jpg"></p>
+
+	<p><b>Tamanho da fonte</b></p>
+	<p>A <i>font-size</i> propriedade define o tamanho do texto. Devem ser usadas as tags HTML apropriadas para ajustes de tamanho da fonte, como &#60;h1&#62; - &#60;h6&#62; para títulos e &#60;p&#62; para parágrafos. O valor do tamanho da fonte pode ser um tamanho absoluto ou relativo. </p>
+	<p><p1>Tamanho absoluto:</p1> Define o texto para um tamanho especificado. Não permite que um usuário altere o tamanho do texto em todos os navegadores (inválido por motivos de acessibilidade). O tamanho absoluto é útil quando o tamanho físico da saída é conhecido.</p>
+	<p><p1>Tamanho relativo:</p1> Define o tamanho em relação aos elementos circundantes. Permite que um usuário altere o tamanho do texto nos navegadores. Se não especificar um tamanho de fonte, o tamanho padrão para o texto normal, como parágrafos, é 16 px (16 px = 1em).</p>
+
+	<p><b>Tamanho da fonte com pixels</b></p>
+	<p>A configuração do tamanho do texto com pixels fornece controle total sobre o tamanho do texto:</p>
+	<p><img src="image/cssFontTamPixel.jpg"></p>
+	<p><img src="image/cssFontTamPixel2.jpg"></p>
+
+	<p><b>Tamanho da fonte com Em</b></p>
+	<p>Para permitir que os usuários redimensionem o texto (no menu do navegador), muitos desenvolvedores usam em vez de pixels. A unidade de tamanho em é recomendada pelo W3C. <b>1em</b> é igual ao tamanho da fonte atual. O tamanho do texto padrão nos navegadores é 16 px. Portanto, o tamanho padrão de 1em é 16px.</p>
+
+	<p>O tamanho pode ser calculado de <b>pixels</b> para <b>em</b> usando esta fórmula: pixels / 16 = em.
+	No exemplo abaixo, o tamanho do texto em é igual ao exemplo anterior em pixels. No entanto, com o tamanho em, é possível ajustar o tamanho do texto em todos os navegadores. No entato, ainda há um problema com versões mais antigas do Internet Explorer. O texto se torna maior do que deveria quando aumentado e menor do que deveria quando diminuído.</p>
+	<p><img src="image/cssFontTamEm.jpg"></p>
+	<p><img src="image/cssFontTamEm2.jpg"></p>
 
 
+	<p><b>Tamanho da fonte responsivo</b></p>
+	<p>O tamanho do texto pode ser definido com uma vw unidade, o que significa "viewport width" (largura da janela de exibição). Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:</p>
+	<p><img src="image/cssFontTamResponsive.jpg"></p>
+
+	<p><b>Propriedade da fonte</b></p>
+	<p>Para reduzir o código, também é possível especificar todas as propriedades de fonte individuais em uma propriedade. A <b>font</b> propriedade é uma propriedade abreviada para:</p>
+	  <p>
+	    <ul>
+	      <li><i>font-style</i></li>
+	      <li><i>font-variant</i></li>
+	      <li><i>font-weight</i></li>
+	      <li><i>font-size/line-height</i></li>
+	      <li><i>font-family</i></li> 
+	    </ul>
+	  </p>
+	<p>Os valores <b>font-size</b> e <b>font-family</b> são obrigatórios. Se um dos outros valores estiver ausente, o valor padrão será usado.</p>
+	<p>Exemplo de propriedades de fonte com a declaração abreviada:</p>
+	<p><img src="image/cssFontPropriedade.jpg"></p>
+	<p><img src="image/cssFontPropriedade2.jpg"></p>
 
 
 	<h4>Borda</h4>
