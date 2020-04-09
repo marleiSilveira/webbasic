@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Introdução ao CSS</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+	<h3>Estrutura e aplicação</h3>
+	<p>
+		<ul>
+			<li>CSS significa <b>Cascading Style Sheets</b></li>
+			<li>Descreve como os elementos HTML devem ser exibidos na tela, papel ou em outra mídia</li>
+			<li>Economiza muito trabalho . Ele pode controlar o layout de várias páginas da web de uma só vez</li>
+			<li>Folhas de estilo externas são armazenadas em arquivos CSS.</li>
+		</ul>
+	</p>
+	<h4>Sintaxe CSS</h4>	
+	<p>	
+		Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:
+	</p>
+	<p><img src="image/cssSintax.jpg"></p>
+	<p>
+		O seletor aponta para o elemento HTML que você deseja estilizar.
+		O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.
+		Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+		Uma declaração CSS sempre termina com ponto e vírgula e os blocos de declaração são cercados por chaves.
+	</p>
+	<hr>
+
+	<h3>Propriedades</h3>
+	<h4>Cores</h4>
+	<p>
+		As cores são especificadas usando nomes de cores predefinidos ou valores RGB, HEX, HSL, RGBA, HSLA.
+		Em CSS, uma cor pode ser especificada usando um nome em inglês de cor próprio como Orange, Violet, LightGray. O CSS suporta 140 nomes de <a href="https://www.w3schools.com/colors/colors_names.asp">cores padrão</a>
+	</p>
+
+	<p><b>Valor RGB</b></p>
+	<p>
+		Formato: <b># rgb - red, green, blue</b>
+	</p>
+	<p>Cada parâmetro (vermelho, verde e azul) define a intensidade da cor entre 0 e 255.</p>
+	<p>
+		Por exemplo, rgb (255, 0, 0) é exibido como vermelho, porque vermelho é definido como seu valor mais alto (255) e os outros são definidos como 0. Para exibir preto, defina todos os parâmetros de cor como 0, assim: rgb (0, 0, 0). Para exibir branco, defina todos os parâmetros de cor como 255, assim: rgb (255, 255, 255).
+	</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssCorRGB.jpg"></p>
+	<p><b>Valor HEX (hexadecimal)</b></p>
+	<p>
+		Formato: <b># rrggbb - red, green, blue</b>
+	</p>
+	<p>
+		Por exemplo, # ff0000 é exibido como vermelho, porque vermelho é definido como seu valor mais alto (ff) e os outros são definidos como o valor mais baixo (00).
+	</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssCorHEX.jpg"></p>
+	<p><b>Valor HSL (matiz, saturação e luminosidade)</b></p>
+	<p>
+		Formato: <b>hsl - hue, saturation, lightness</b>
+	</p>
+	<p>
+		Matiz é um grau na roda de cores de 0 a 360. 0 é vermelho, 120 é verde e 240 é azul.
+		A saturação é um valor percentual, 0% significa um tom de cinza e 100% é a cor completa.
+		A luminosidade também é uma porcentagem, 0% é preto, 50% não é claro nem escuro, 100% é branco.
+	</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssCorHSL.jpg"></p>
+	<hr>
+
+	<h4>Plano de Fundo</h4>
+	<p>
+		As propriedades de segundo plano do CSS são usadas para definir os efeitos de segundo plano para os elementos.
+	</p>
+
+	<p><b>Cor de fundo<p></b>
+	<p>A <i>background-color</i> propriedade especifica a cor de fundo de um elemento.</p>
+	<p>O código a segiur exibe o fundo integral da página em azul claro:</p>
+	<p><img src="image/cssCorBackgroudPagina.jpg"></p>
+	<p><img src="image/cssCorBackgroudPagina2.jpg"></p>
+	<p>
+		Pode ser definido a cor do plano de fundo para qualquer elemento HTML.
+		Por exemplo, os elementos &#60;h1&#62;, &#60;p&#62; e &#60;div&#62; terão cores de fundo diferentes:
+	</p>
+	<p><img src="image/cssCorBackgroudElemento.jpg"></p>
+	<p><img src="image/cssCorBackgroudElemento2.jpg"></p>
+
+	<p><b>Imagem de fundo<p></b>
+	<p>A <i>background-image</i> propriedade define a cor de fundo de um elemento usando uma imagem.</p>
+	<p>Para utilizar basta definir a propriedade no head com a <i>url</i> específica:</p>
+	<p><img src="image/cssCorBackgroudImage.jpg"></p>
+
+	<p><b>Fundo de repetição<p></b>
+	<p>Uma imagem pode ser repetida no fundo gradualmente, de forma horizontal ou vertical:</p>
+	<p><img src="image/cssCorBackgroudRepeatX.jpg"></p>
+	<p><img src="image/cssCorBackgroudRepeatX2.jpg"></p>
+	<p>Com <b>background-repeat: no-repeat;</b>, a imagem aparece apenas uma vez.</p>
+    <p>Com <b>background-position: right top;</b>, a imagem é posicionada no canto superior direito da página.</p>
+	<p><img src="image/cssCorBackgroudPosicao.jpg"></p>
+
+	<p><b>Anexo de fundo<p></b>
+	<p>A <b>background-attachment</b> propriedade especifica se a imagem de plano de fundo deve rolar com a página ou ser fixa.</p>
+	<p>Para imagens fixas faça:</p>
+	<p><img src="image/cssCorFundoAnexoFixo.jpg"></p>
+	<p>Para imagens que devem se movimentar com a página faça:</p>
+	<p><img src="image/cssCorFundoAnexoScroll.jpg"></p>
+
+	<p><b>Propriedade Shorthand<p></b>
+	<p>Para reduzir o código, também é possível especificar todas as propriedades de segundo plano em uma única propriedade. Isso é chamado de propriedade Shorthand (abreviada).</p>
+	<p>Em vez de escrever:</p>
+	<p><img src="image/cssPropriedadeShorthand.jpg"></p>
+	<p>Use a propriedade abreviada:</p>
+	<p><img src="image/cssPropriedadeShorthand2.jpg"></p>
+	<p>A ordem dos valores da propriedade é:</p>
+	<p><img src="image/cssPropriedadeShorthandOrdem.jpg"></p>
+	<p>Não importa se um dos valores da propriedade está ausente, desde que os outros estejam nessa ordem.
+	</p>
+	<hr>
+
+<h4>Texto</h4>
+	<p>Para saber mais sobre cor de texto, acesse o tema Cor em Propriedades.</p>
+	<p><b>Alinhamento de texto</b></p>
+	<p>A text-align propriedade é usada para definir o alinhamento horizontal de um texto.
+	Um texto pode ser alinhado à esquerda ou à direita, centralizado ou justificado.</p>
+
+	<p>O exemplo a seguir mostra o texto alinhado ao centro e alinhado à esquerda e à direita (o alinhamento à esquerda é o padrão se a direção do texto for da esquerda para a direita e o alinhamento à direita é o padrão se a direção do texto é da direita para a esquerda):</p>
+	<p><img src="image/cssTextAlinhado.jpg"></p>
+	<p><img src="image/cssTextAlinhado2.jpg"></p>
+
+	<p>Quando a <i>text-align</i> propriedade é configurada para "justificar", cada linha é esticada para que cada linha tenha largura igual e as margens esquerda e direita são retas (como em revistas e jornais):</p>
+	<p><img src="image/cssTextJustificado.jpg"></p>
+	<p><img src="image/cssTextJustificado2.jpg"></p>
+
+	<p><b>Transformação de Texto</b></p>
+	<p>A <i>text-transform</i> propriedade é usada para especificar letras maiúsculas e minúsculas em um texto.
+	Pode ser usado para transformar tudo em letras maiúsculas ou minúsculas ou colocar em maiúscula a primeira letra de cada palavra:</p>
+	<p><img src="image/cssTextUpperLower.jpg"></p>
+	<p><img src="image/cssTextUpperLower2.jpg"></p>
+
+	<p><b>Recuo do texto</b></p>
+	<p>A <i>text-indent</i> propriedade é usada para especificar o recuo da primeira linha de um texto:</p>
+	<p><img src="image/cssTextIdent.jpg"></p>
+	<p><img src="image/cssTextIdent2.jpg"></p>
+
+	<p><b>Espaçamento entre letras</b></p>
+	<p>A <i>letter-spacing</i> propriedade é usada para especificar o espaço entre os caracteres em um texto.
+	O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre caracteres:</p>
+	<p><img src="image/cssTextEspacamento.jpg"></p>
+	<p><img src="image/cssTextEspacamento2.jpg"></p>
+
+	<p><b>Altura da linha</b></p>
+	<p>A <i>line-height</i> propriedade é usada para especificar o espaço entre as linhas:</p>
+	<p><img src="image/cssTextAltura.jpg"></p>
+	<p><img src="image/cssTextAltura2.jpg"></p>
+	<hr>
+
+	<h4>Fonte</h4>
+	<p>No CSS, existem dois tipos de nomes de família de fontes:</p>
+	<p><p1>generic family:</p1> um grupo de famílias de fontes com aparência semelhante (como "Serif" ou "Monospace")</p>
+	<p><p1>generic font:</p1> uma família de fontes específica (como "Times New Roman" ou "Arial")</p>
+	<p>A família da fonte de um texto é definida com a <i>font-family</i> propriedade.</p>
+	<p>A <i>font-family</i> propriedade deve conter vários nomes de fontes como um sistema de "fallback". Se o navegador não suportar a primeira fonte, ele tenta a próxima fonte e assim por diante.</p>
+	<p>Se o nome de uma família de fontes tiver mais de uma palavra, ele deverá estar entre aspas, como: "Times New Roman". Mais de uma família de fontes é especificada em uma lista separada por vírgula:</p>
+	<p><img src="image/cssFontFamily.jpg"></p>
+	<p><img src="image/cssFontFamily2.jpg"></p>
+
+	<p><b>Estilo de fonte</b></p>
+	<p>A <i>font-style</i> propriedade é usada principalmente para especificar texto em itálico. Esta propriedade possui três valores:</p>
+  	<p>
+   	    <ul>
+     	 	<li><i>normal</i> o texto é mostrado normalmente</li>
+     	 	<li><i>itálico</i> o texto é mostrado em itálico</li>
+     		 <li><i>oblíquo</i> o texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado)</li>
+    	</ul>
+    </p>
+    <p>Exemplo:</p>
+	<p><img src="image/cssFontEstilo.jpg"></p>
+	<p><img src="image/cssFontEstilo2.jpg"></p>
+
+	<p><b>Espessura da fonte</b></p>
+	<p>A <i>font-weight</i> propriedade especifica o peso de uma fonte:</p>
+	<p><img src="image/cssFontEspessura.jpg"></p>
+	<p><img src="image/cssFontEspessura2.jpg"></p>
+
+	<p><b>Tamanho da fonte</b></p>
+	<p>A <i>font-size</i> propriedade define o tamanho do texto. Devem ser usadas as tags HTML apropriadas para ajustes de tamanho da fonte, como &#60;h1&#62; - &#60;h6&#62; para títulos e &#60;p&#62; para parágrafos. O valor do tamanho da fonte pode ser um tamanho absoluto ou relativo. </p>
+	<p><p1>Tamanho absoluto:</p1> Define o texto para um tamanho especificado. Não permite que um usuário altere o tamanho do texto em todos os navegadores (inválido por motivos de acessibilidade). O tamanho absoluto é útil quando o tamanho físico da saída é conhecido.</p>
+	<p><p1>Tamanho relativo:</p1> Define o tamanho em relação aos elementos circundantes. Permite que um usuário altere o tamanho do texto nos navegadores. Se não especificar um tamanho de fonte, o tamanho padrão para o texto normal, como parágrafos, é 16 px (16 px = 1em).</p>
+
+	<p><b>Tamanho da fonte com pixels</b></p>
+	<p>A configuração do tamanho do texto com pixels fornece controle total sobre o tamanho do texto:</p>
+	<p><img src="image/cssFontTamPixel.jpg"></p>
+	<p><img src="image/cssFontTamPixel2.jpg"></p>
+
+	<p><b>Tamanho da fonte com Em</b></p>
+	<p>Para permitir que os usuários redimensionem o texto (no menu do navegador), muitos desenvolvedores usam em vez de pixels. A unidade de tamanho em é recomendada pelo W3C. <b>1em</b> é igual ao tamanho da fonte atual. O tamanho do texto padrão nos navegadores é 16 px. Portanto, o tamanho padrão de 1em é 16px.</p>
+
+	<p>O tamanho pode ser calculado de <b>pixels</b> para <b>em</b> usando esta fórmula: pixels / 16 = em.
+	No exemplo abaixo, o tamanho do texto em é igual ao exemplo anterior em pixels. No entanto, com o tamanho em, é possível ajustar o tamanho do texto em todos os navegadores. No entato, ainda há um problema com versões mais antigas do Internet Explorer. O texto se torna maior do que deveria quando aumentado e menor do que deveria quando diminuído.</p>
+	<p><img src="image/cssFontTamEm.jpg"></p>
+	<p><img src="image/cssFontTamEm2.jpg"></p>
+
+
+	<p><b>Tamanho da fonte responsivo</b></p>
+	<p>O tamanho do texto pode ser definido com uma vw unidade, o que significa "viewport width" (largura da janela de exibição). Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:</p>
+	<p><img src="image/cssFontTamResponsive.jpg"></p>
+
+	<p><b>Propriedade da fonte</b></p>
+	<p>Para reduzir o código, também é possível especificar todas as propriedades de fonte individuais em uma propriedade. A <b>font</b> propriedade é uma propriedade abreviada para:</p>
+	 <p>
+	    <ul>
+	      <li><i>font-style</i></li>
+	      <li><i>font-variant</i></li>
+	      <li><i>font-weight</i></li>
+	      <li><i>font-size/line-height</i></li>
+	      <li><i>font-family</i></li> 
+	    </ul>
+	 </p>
+	<p>Os valores <b>font-size</b> e <b>font-family</b> são obrigatórios. Se um dos outros valores estiver ausente, o valor padrão será usado.</p>
+	<p>Exemplo de propriedades de fonte com a declaração abreviada:</p>
+	<p><img src="image/cssFontPropriedade.jpg"></p>
+	<p><img src="image/cssFontPropriedade2.jpg"></p>
+	<hr>
+
+	<h4>Borda</h4>
+	<p>As <i>border</i> propriedades CSS permitem especificar o estilo, largura e cor da borda de um elemento. A <i>border-style</i> propriedade especifica que tipo de borda a ser exibida. Os seguintes valores são permitidos:
+	</p>
+	<p><img src="image/cssBordaEstilo.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaEstilo2.jpg"></p>
+
+	<p><b>Largura das bordas</b></p>
+	<p>A <i>border-width</i> propriedade especifica a largura das quatro bordas. A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso:</p>
+	<p><img src="image/cssBordaLargura.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaLargura2.jpg"></p>
+
+	<p>É possível ter valores diferentes para cada lado da borda. A <i>border-width</i> propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda), observe os valores abaixo:</p>
+	<p><img src="image/cssBordaLarguraDiferente.jpg"></p>
+
+	<p><b>Cor das bordas</b></p><!--Em "css.cor" deve ser iserido umlink para o titulo cor em css neste trabalho-->
+	<p>A cor da borda segue o mesmo padrão que em <b>css.cor</b>, explicadas anteriormente (RGB, HEX, HSL, RGBA e HSLA).</p>
+	<p><img src="image/cssBordaCor.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaCor2.jpg"></p>
+
+	<p><b>Bordas Shorthand ou abreviadas</b></p>
+	<p>A <i>border</i> é uma propriedade abreviada para as seguintes propriedades de borda individuais:</p>
+	<p>
+	    <ul>
+	      	<li><i>border-width</i></li>
+	     	<li><i>border-style (requeridos)</i></li>
+	     	<li><i>border-color</i></li> 
+	    </ul>
+	</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaShorthand.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaShorthand2.jpg"></p>
+
+	<p>Também pode especificar todas as propriedades de borda individuais para apenas um lado.</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaShorthandOneSide.jpg"></p>
+	<p>Resultado: </p>
+	<p><img src="image/cssBordaShorthandOneSide2.jpg"></p>
+
+	<p><b>Bordas arredondadas</b></p>
+	<p>A <i>border-radius</i> propriedade é usada para adicionar bordas arredondadas a um elemento:</p>
+	<p>A borda pode ser arredondadas de grau maior ou menor.</p>
+	<p>Exemplo:</p>
+	<p><img src="image/cssBordaRadius.jpg"></p>
+	<p>Resultado:</p>
+	<p><img src="image/cssBordaRadius2.jpg"></p>
+	<hr>
+
+	<h4>Margin</h4>
+	<p>As <i>margin</i> propriedades CSS são usadas para criar espaço em torno dos elementos, fora de quaisquer bordas definidas. Existem propriedades para definir a margem para cada lado de um elemento (superior, direito, inferior e esquerdo:</p>
+	<p>
+	    <ul>
+	      	<li><i>margin-top</i></li>
+	     	<li><i>margin-right</i></li>
+	     	<li><i>margin-bottom</i></li> 
+	     	<li><i>margin-left</i></li>
+	    </ul>
+	</p>
+	<p>As propriedades da margem podem ter os seguintes valores:</p>
+	<p>
+	    <ul>
+	      	<li><i>auto</i>o navegador calcula a margem</li>
+	     	<li><i>length</i>especifica uma margem em px, pt, cm etc.</li>
+	     	<li><i>%</i>especifica uma margem em% da largura do elemento que contém</li> 
+	     	<li><i>inherit</i>especifica que a margem deve ser herdada do elemento pai</li>
+	    </ul>
+	</p>
+	<p>Exemplo de margem com valores diferentes:</p>
+	<p><img src="image/cssMarginIndividualSides.jpg"></p>
+
+	<p>Para encurtar o código, é possível especificar todas as propriedades da margem em uma propriedade <i>ShortHands.</i>
+	<p>Exemplo de margem com propriedade reduzida:</p>
+	<p><img src="image/cssMarginShortHands.jpg"></p>
+
+	<p>Pode ser definido a propriedade de margem <i>auto</i> para centralizar horizontalmente o elemento no contêiner. O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.</p>
+	<p>Exemplo de margem com propriedade Auto:</p>
+	<p><img src="image/cssMarginAuto.jpg"></p>
+
+	<h4>Padding (preenchimento)</h4>
+	<p>As <i>padding</i> propriedades CSS são usadas para gerar espaço em torno do conteúdo de um elemento, dentro de qualquer borda definida. Em CSS existem propriedades para definir o preenchimento para cada lado de um elemento (superior, direito, inferior e esquerdo):</p>
+	<p>
+	    <ul>
+	      	<li><i>padding-top</i></li>
+	     	<li><i>padding-right</i></li>
+	     	<li><i>padding-bottom</i></li> 
+	     	<li><i>padding-left</i></li>
+	    </ul>
+	</p>
+	<p>As propriedades da preenchimento podem ter os seguintes valores:</p>
+	<p>
+	    <ul>
+	     	<li><i>length</i>especifica um preenchimento em px, pt, cm etc.</li>
+	     	<li><i>%</i>especifica uma preenchimento em <b>%</b> da largura do elemento que contém</li> 
+	     	<li><i>inherit</i>especifica que a preenchimento deve ser herdada do elemento pai</li>
+	    </ul>
+	</p>
+	<p>O exemplo abaixo define o preenchimento diferente para todos os quatro lados de um elemento &#60;div&#62;:</p>  
+	<p><img src="image/cssPadding.jpg"></p>   
+	
+	<p>Para encurtar o código, é possível especificar todas as propriedades da <i>padding</i> em uma propriedade <i>ShortHands.</i>
+	<p>Exemplo de preencimento com propriedade reduzida:</p>
+	<p><img src="image/cssPaddingShorthand.jpg"></p>
+	<hr>
+
+	<h4>Tabela</h4>
+	<p>A aparência de uma tabela HTML pode ser bastante aprimorada com CSS.</p>
+	
+	<p><b>Bordas da tabela</b></p>
+	<p>Para especificar bordas da tabela em CSS, use a <i>border</i> propriedade.</p>
+	<p>Exemplo de especificação de bordas preta separadas para os elementos &#60;table&#62;, &#60;th&#62; e &#60;td&#62;:</p> 
+	<p><img src="image/cssTabelaBorda.jpg"></p>
+	
+	<p><b>Recolher bordas da tabela</b></p>
+	<p>A <i>border-collapse</i> propriedade define se as bordas da tabela devem ser recolhidas em uma única borda:</p> 
+	<p><img src="image/cssTabelaBordaRecolher.jpg"></p>
+	<p>Se você deseja apenas uma borda ao redor da tabela, especifique apenas a border propriedade para &#60;table&#62;</p>
+
+	<p><b>Largura e altura da tabela</b></p>
+	<p>São definidas pelas propriedades <i>widthe</i> e <i>height</i>. O exemplo abaixo define a largura da tabela para 50% e a altura dos &#60;th&#62; elementos para 25px:</p>
+	<p><img src="image/cssTabelaBordaTamanho.jpg"></p>
+
+	<p><b>Alinhamento horizontal</b></p>
+	<p>A <i>text-align</i> propriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o conteúdo dos elementos &#60;th&#62; é alinhado ao centro e o conteúdo dos elementos &#60;td&#62; é alinhado à esquerda. O exemplo a seguir alinha o texto à esquerda em &#60;th&#62; elementos:</p> 
+	<p><img src="image/cssTabelaAlinharHorizontal.jpg"></p>
+
+	<p><b>Alinhamento vertical</b></p>
+	<p>A <i>vertical-align</i> propriedade define o alinhamento vertical (como superior, inferior ou central) do conteúdo em &#60;th&#62; ou &#60;td&#62;. Por padrão, o alinhamento vertical do conteúdo em uma tabela é middle para os elementos. O exemplo a seguir define o alinhamento vertical do texto na parte inferior dos elementos &#60;th&#62;:</p> 
+	<p><img src="image/cssTabelaAlinharVertical.jpg"></p>
+
+	<p><b>Table Padding</b></p>
+	<p>Para controlar o espaço entre a borda e o conteúdo em uma tabela, use a <i>padding</i> propriedade nos elementos &#60;th&#62; e &#60;td&#62;:</p> 
+	<p><img src="image/cssTabelaPadding.jpg"></p>
+
+	<p><b>Tabelas Striped</b></p>
+	<p>Para tabelas zebra-striped, use o <b>nth-child()</b> seletor e adicione <i>background-color</i> a todas as linhas pares (ou ímpares) da tabela:</p>
+	<p><img src="image/cssTabelaStriped.jpg"></p>
+
+	<p><b>Cor da tabela</b></p>
+	<p>O exemplo abaixo especifica a cor do plano de fundo e a cor do texto dos &#60;th&#62; elementos:</p>
+	<p><img src="image/cssTabelaCor.jpg"></p>
+
+	<p><b>Tabela Responsive </b></p>
+	<p>Uma tabela responsive exibirá uma barra de rolagem horizontal se a tela for muito pequena para exibir o conteúdo completo. Adicione um elemento de contêiner (como &#60;div&#62;) com <b>overflow-x:auto</b> ao redor de &#60;table&#62; para torná-lo responsivo: </p>
+	<p>Exemplo:</p> <p><img src="image/cssTabelaResponsive.jpg"></p>
+	<br><br>
+	<div style="overflow-x:auto;">
+	  	<table>
+		    <tr>
+		      <th>First Name</th>
+		      <th>Last Name</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		    </tr>
+		    <tr>
+		      <td>Jill</td>
+		      <td>Smith</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		    </tr>
+		    <tr>
+		      <td>Eve</td>
+		      <td>Jackson</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		    </tr>
+		    <tr>
+		      <td>Adam</td>
+		      <td>Johnson</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		    </tr>
+	  	</table>
+	</div>
+	<br><br>
+	<p>
+		Exemplos podem ser encontrados no site da <a href="https://www.w3schools.com/css/css_examples.asp">w3schools</a>.
+	</p>
+	<hr>
+</body>
+</html>
